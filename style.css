@@ -10,7 +10,7 @@
         .about {
             height: 100vh;
             width: 100%;
-            background: #ffee00;
+            background: #ffe62a;
         }
         
         .profil {
@@ -34,6 +34,11 @@
             justify-content: flex-start;
             align-items: center;
             position: fixed;
+            -webkit-transition: height 0.3s;
+            -moz-transition: height 0.3s;
+            -ms-transition: height 0.3s;
+            -o-transition: height 0.3s;
+            transition: height 0.3s;
         }
         
         .shrink {
