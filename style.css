@@ -1,0 +1,160 @@
+        body {
+            margin: auto;
+        }
+        
+        main {
+            text-align: center;
+            margin: auto;
+        }
+        
+        .about {
+            height: 100vh;
+            width: 100%;
+            background: #ffee00;
+        }
+        
+        .profil {
+            background: yellow;
+            width: 20%;
+            height: 100vh;
+        }
+        
+        .description {
+            width: 80%;
+            overflow: hidden;
+            background: #ffee00;
+        }
+        
+        header {
+            width: 100%;
+            height: 120px;
+            z-index: 5;
+            background: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: fixed;
+        }
+        
+        .headerscroll {
+            width: 100%;
+            height: 100px;
+            z-index: 5;
+            background: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: fixed;
+        }
+        
+        #logo {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-weight: normal;
+            font-size: 2.5em;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            animation-name: apparition;
+            animation-duration: 4s;
+        }
+        
+        .trait {
+            border-top: 1px solid grey;
+            width: 40%;
+        }
+        
+        .trait2 {
+            border-top: 1px solid black;
+            width: 10%;
+        }
+        
+        h2 {
+            margin-top: 0px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1em;
+            font-weight: normal;
+        }
+        
+        h2 a {
+            text-decoration: none;
+            color: grey;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        h4 {
+            margin-top: 20px;
+            font-size: 2.4em;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: normal;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        #boxp {
+            display: flex;
+            justify-content: center;
+            height: 300px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .img {
+            position: absolute;
+            z-index: 1;
+            margin-top: 1px;
+        }
+        
+        .calque {
+            width: 900px;
+            height: 300px;
+            top: 0px;
+            left: 0;
+            z-index: 2;
+            border: 1px dashed black;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        @keyframes logo {
+            0% {
+                margin-left: 0px;
+            }
+            50% {
+                margin-left: 10px;
+            }
+            100% {
+                margin-left: 0px;
+            }
+        }
+        /*   @keyframes apparition {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
