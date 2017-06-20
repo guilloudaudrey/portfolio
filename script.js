@@ -37,8 +37,13 @@ $(function() {
         let scroll = getCurrentScroll();
         if (scroll >= shrinkHeader) {
             $('header').addClass('shrink');
+            $('#logo').hide();
+
         } else {
             $('header').removeClass('shrink');
+            $('#logo').show();
+
+
         }
     });
 
