@@ -27,5 +27,22 @@ $(document).ready(function() {
         let speed = 750; // Durée de l'animation (en ms)
         $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
         return false;
+
     });
+});
+
+$(function() {
+    let shrinkHeader = 604;
+    $(window).scroll(function() {
+        let scroll = getCurrentScroll();
+        if (scroll >= shrinkHeader) {
+            $('header').addClass('shrink');
+        } else {
+            $('header').removeClass('shrink');
+        }
+    });
+
+    function getCurrentScroll() {
+        return window.pageYOffset;
+    }
 });
