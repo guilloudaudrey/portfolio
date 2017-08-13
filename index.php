@@ -10,24 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="styles.php" rel="stylesheet" type="text/css" media="all" />
-
-    <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://use.fontawesome.com/0df17449bf.js"></script>
+    <title>Audrey Guilloud</title>
 </head>
 
 <body>
     <header>
         <div id="logo">
-        <h1 class="nomlogo">Audrey Guilloud</h1>
-        <div class="trait"></div>
-        <h2 class="navlogo">Web developper</h2>
+        <h1 class="nomlogo"><img src="logo3.png" style="width: 50px; margin-left: 50px;margin-top: 0px;"></h1>
+        <h2 class="navlogo">Développeuse<br> web<br> junior</h2>
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="#boxp" class="lien">Projets </a></li>
                 <li></li>
-                <li><a href="#" class="lien">Compétences </a></li>
+                <li><a href="#skills" class="lien">Compétences </a></li>
                 <li></li>
-                <li><a href="#" class="lien">Parcours </a></li>
+                <li><a href="#parcours" class="lien">Parcours </a></li>
                 <li></li>
                 <li><a href="#contact" class="lien">Contact </a><li>
             </ul>
@@ -78,12 +78,15 @@
     <div id="skills">
         <div class="container_comp">
         <div class="competences">
+            <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
             <div class="descr_comp">Html</div>
         </div>
         <div class="competences">
+            <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
             <div class="descr_comp">css</div>
         </div>
         <div class="competences">
+            <i class="fa fa-bold fa-5x" aria-hidden="true"></i>
             <div class="descr_comp">bootstrap</div>
         </div>
         <div class="competences">
@@ -96,10 +99,39 @@
             <div class="descr_comp">sql</div>
         </div>
         <div class="competences">
+            <i class="fa fa-github fa-5x" aria-hidden="true"></i>
             <div class="descr_comp">github</div>
+        </div>
+            <div class="competences">
+                <i class="fa fa-wordpress fa-5x" aria-hidden="true"></i>
+            <div class="descr_comp">wordpress</div>
         </div>
         </div>
     </div>
+    <div id="parcours">
+        <div id="parcours1"></div>
+        <div id="parcours2">
+            <div id="text_parcours">
+                <h1>Qui suis-je ?</h1>
+                <p>
+Journaliste, principalement sur Internet, pendant 7 ans, je me suis tournée en 2013 vers le développement front-end. Passionnée par le web et les arts graphiques, c’est tout naturellement que j’ai pris ce virage afin d’en faire mon métier.
+
+A 28 ans, reprendre des études à temps complet était pour moi difficilement envisageable. C’est donc en autodidacte que je me suis formée au développement front-end et à l’intégration. Durant un an, livres, cours en vidéo, tutoriels et sites spécialisés ont été mes outils et j'ai pu valider cette autoformation en décrochant mon premier poste début 2014.
+Depuis, je cherche toujours à perfectionner mes compétences, dans un métier où l'on n’a jamais fini d’apprendre.
+                </p>
+                </div>
+        </div>
+        <div id="photo_parcours"></div>
+    </div>
+    <div id="contact">
+        <div id="contact1"></div>
+        <div id="contact2">
+            <div id="contact_text">
+                
+                
+            </div>
+        </div>
+        </div>
     </main>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="script.js"></script>
