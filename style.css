@@ -20,18 +20,17 @@
         }
         
         .description {
-            width: 80%;
-            overflow: hidden;
-            background: #ffee00;
+            font-family: 'Josefin Sans', sans-serif;
+            width: 50%;
         }
         
         header {
             width: 100%;
-            height: 120px;
+            height: 110px;
             z-index: 5;
             background: white;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             position: fixed;
             -webkit-transition: height 0.3s;
@@ -41,11 +40,15 @@
             transition: height 0.3s;
         }
         
-        .shrink {
+        .nomlogo1 {
             height: 180px;
             width: 180px;
-            background: url(logo.png) no-repeat center;
-            background-size: 70%;
+            background: url(logo3.png) no-repeat center;
+            background-size: 50%;
+        }
+        
+        .traitshrink {
+            width: 30%;
         }
         
         .headerscroll {
@@ -64,10 +67,72 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-left: 0;
+            text-align: center;
+        }
+        
+        nav {
+            width: 70%;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        
+        .menushrink {
+            margin-top: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            text-align: center;
+            margin-left: -30px;
+        }
+        
+        nav a {
+            font-size: 1.1em;
+            transition: .5s ease;
+            color: grey;
+        }
+        
+        nav ul li {
+            list-style-type: none;
+            margin-right: 20px;
+        }
+        
+        nav li a:hover {
+            color: black;
+        }
+        
+        nav li a::after {
+            content: '';
+            margin-top: 10px;
+            margin-bottom: -10px;
+            display: block;
+            width: 0;
+            height: 4px;
+            background: transparent;
+            width: 0%;
+            transition: width 0.3s easeInOutBack;
+            background-color: #fcf428;
+            transition: width 0.8s ease;
+        }
+        
+        nav li a:hover::after {
+            width: 100%;
+            transition: width 0.3s easeInOutBack;
+            background-color: black;
+            transition: width 0.3s ease;
         }
         
         h1 {
-            font-family: 'Permanent Marker', cursive;
+            font-family: 'Abril Fatface', cursive;
             font-weight: normal;
             font-size: 2.5em;
             margin-bottom: 0px;
@@ -95,8 +160,7 @@
             font-weight: normal;
         }
         
-        h2 a {
-            text-decoration: none;
+        .navlogo {
             color: grey;
         }
         
@@ -109,7 +173,7 @@
         h4 {
             margin-top: 20px;
             font-size: 2.4em;
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Abril Fatface', cursive;
             font-weight: normal;
         }
         
@@ -123,8 +187,9 @@
             justify-content: center;
             height: 300px;
             text-align: center;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            padding-top: 30px;
         }
         
         .img {
@@ -149,6 +214,35 @@
         
         a {
             text-decoration: none;
+        }
+        
+        #skills {
+            height: 100vh;
+            background: #fcf428;
+            margin-top: 40px;
+        }
+        
+        .container_comp {
+            margin-left: 200px;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        
+        .competences {
+            height: 200px;
+            width: 200px;
+            background: white;
+            margin: 10px;
+            border-radius: 100px;
+            margin-bottom: 50px;
+        }
+        
+        .descr_comp {
+            margin-top: 220px;
+            font-family: 'Josefin Sans', sans-serif;
         }
         
         @keyframes logo {
