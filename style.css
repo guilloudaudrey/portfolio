@@ -1,266 +1,470 @@
-        body {
-            margin: auto;
+    body {
+        margin: auto;
+    }
+    
+    main {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .about {
+        height: 100vh;
+        width: 100%;
+        background: #f9da25;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .description {
+        font-family: 'Josefin Sans', sans-serif;
+        width: 50%;
+    }
+    
+    header {
+        width: 100%;
+        height: 110px;
+        z-index: 5;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+    
+    .nomlogo1 {
+        height: 180px;
+        width: 180px;
+        background: url(logo3.png) no-repeat center;
+        background-size: 50%;
+    }
+    
+    .traitshrink {
+        width: 30%;
+    }
+    
+    .headerscroll {
+        width: 100%;
+        height: 100px;
+        z-index: 5;
+        background: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #logo {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        text-align: center;
+        height: 120px;
+    }
+    
+    #logo img {
+        padding-right: 20px;
+        border-right: 1px solid grey;
+    }
+    
+    nav {
+        width: 70%;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    
+    .menushrink {
+        margin-top: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+        margin-left: 0px;
+        width: 60%;
+    }
+    
+    nav a {
+        font-size: 1.1em;
+        transition: .5s ease;
+        color: grey;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        margin-right: 20px;
+        margin-top: 9px;
+    }
+    
+    nav li a:hover {
+        color: black;
+    }
+    
+    nav li a::after {
+        content: '';
+        margin-top: 10px;
+        margin-bottom: -10px;
+        display: block;
+        width: 0;
+        height: 4px;
+        background: transparent;
+        width: 0%;
+        transition: width 0.3s easeInOutBack;
+        background-color: #fcf428;
+        transition: width 0.8s ease;
+    }
+    
+    nav li a:hover::after {
+        width: 100%;
+        transition: width 0.3s easeInOutBack;
+        background-color: black;
+        transition: width 0.3s ease;
+    }
+    
+    h1 {
+        font-family: 'Abril Fatface', cursive;
+        font-weight: normal;
+        font-size: 2.5em;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .trait {
+        border-top: 1px solid grey;
+        width: 40%;
+    }
+    
+    .trait2 {
+        border-top: 1px solid black;
+        width: 10%;
+    }
+    
+    h2 {
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+    }
+    
+    .navlogo {
+        margin-left: 20px;
+        color: grey;
+        text-align: left;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        font-weight: normal;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    h4 {
+        margin-top: 20px;
+        font-size: 2.4em;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: normal;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    #boxp {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+    
+    .img {
+        position: absolute;
+        z-index: 1;
+        margin-top: 1px;
+    }
+    
+    .calque {
+        width: 900px;
+        height: 300px;
+        top: 0px;
+        left: 0;
+        z-index: 2;
+        border: 1px dashed black;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #skills {
+        height: 100vh;
+        background: #CBBAED;
+        margin-top: 40px;
+    }
+    
+    .container_comp {
+        margin-left: 200px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    
+    .competences {
+        height: 200px;
+        width: 200px;
+        background: white;
+        margin: 10px;
+        border-radius: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .competences>img {
+        margin-top: 65px;
+        z-index: 900;
+    }
+    
+    .fa {
+        margin-top: 65px;
+        z-index: 900;
+    }
+    
+    .descr_comp {
+        margin-top: 80px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    #parcours {
+        height: 100vh;
+        display: flex;
+    }
+    
+    #parcours1 {
+        height: 100vh;
+        border-right: 1px dashed black;
+        width: 30%;
+    }
+    
+    #parcours2 {
+        height: 100vh;
+        width: 70%;
+    }
+    
+    #photo_parcours {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background: #EFCA08;
+        position: absolute;
+        left: 285px;
+        top: 3000px;
+        z-index: 200;
+    }
+    
+    #text_parcours {
+        width: 70%;
+        z-index: 500;
+        height: 80vh;
+        margin-left: 180px;
+        margin-top: 120px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.1em;
+    }
+    
+    #contact {
+        height: 100vh;
+        background: #adffd7;
+        background-position-y: -750px;
+        background-position-x: -500px;
+        background-size: 200%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .box {
+        width: 50%;
+        height: 400px;
+        float: left;
+        background-color: white;
+        border-radius: 1px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2em;
+    }
+    
+    .box h3 {
+        font-weight: normal;
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2em;
+    }
+    
+    .box2 {
+        background-color: white;
+    }
+    
+    .shadow2 {
+        position: relative;
+    }
+    
+    .shadow2 {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+    }
+    /*styling shadows
+****************************************************************/
+    
+    .card {
+        font-family: 'Josefin Sans', sans-serif;
+        background: #fff;
+        text-align: center;
+        border-radius: 2px;
+        display: inline-block;
+        height: 300px;
+        margin: 1rem;
+        position: relative;
+        top: 200px;
+        left: -100px;
+        width: 450px;
+        margin-right: -550px;
+        -ms-transform: rotate(-7deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-7deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-7deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card h1 {
+        margin-top: 30px;
+        animation: apparition;
+        animation-duration: 4s;
+    }
+    
+    .contact_p {
+        animation: apparition;
+        animation-duration: 4s;
+    }
+    
+    .card>h1:hover {
+        transition: 1s;
+        color: #CBBAED;
+    }
+    
+    .card>h1:not(:hover) {
+        transition: 1s;
+        color: black;
+    }
+    
+    .desc_p {
+        margin-top: 50px;
+        color: gray;
+        animation: apparition;
+        animation-duration: 2s;
+    }
+    
+    .trait {
+        margin-top: 10px;
+        border-top: 0.5px solid gray;
+        animation: apparition;
+        animation-duration: 4s;
+    }
+    
+    .var1 {
+        -ms-transform: rotate(8deg);
+        /* IE 9 */
+        -webkit-transform: rotate(8deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(8deg);
+    }
+    
+    .card-3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    .var1:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    
+    .fa-envelope {
+        animation-name: enveloppe;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation: apparition;
+        animation-duration: 8s;
+    }
+    
+    @keyframes annotation-dot {
+        from {
+            box-shadow: 0 0 3px #fff;
         }
-        
-        main {
-            text-align: center;
-            margin: auto;
+        to {
+            box-shadow: 0 0 20px #fff;
         }
-        
-        .about {
-            height: 100vh;
-            width: 100%;
-            background: #fcf428;
+    }
+    
+    @-webkit-keyframes annotation-dot {
+        from {
+            box-shadow: 0 0 3px #fff;
         }
-        
-        .profil {
-            background: yellow;
-            width: 20%;
-            height: 100vh;
+        to {
+            box-shadow: 0 0 20px #fff;
         }
-        
-        .description {
-            font-family: 'Josefin Sans', sans-serif;
-            width: 50%;
+    }
+    
+    @keyframes enveloppe {
+        0% {
+            opacity: 1;
         }
-        
-        header {
-            width: 100%;
-            height: 110px;
-            z-index: 5;
-            background: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            -webkit-transition: height 0.3s;
-            -moz-transition: height 0.3s;
-            -ms-transition: height 0.3s;
-            -o-transition: height 0.3s;
-            transition: height 0.3s;
+        100% {
+            opacity: 0.5;
         }
-        
-        .nomlogo1 {
-            height: 180px;
-            width: 180px;
-            background: url(logo3.png) no-repeat center;
-            background-size: 50%;
+    }
+    
+    @keyframes logo {
+        0% {
+            margin-left: 0px;
         }
-        
-        .traitshrink {
-            width: 30%;
+        50% {
+            margin-left: 10px;
         }
-        
-        .headerscroll {
-            width: 100%;
-            height: 100px;
-            z-index: 5;
-            background: white;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            position: fixed;
+        100% {
+            margin-left: 0px;
         }
-        
-        #logo {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 0;
-            text-align: center;
+    }
+    
+    @keyframes apparition {
+        0% {
+            opacity: 0;
         }
-        
-        nav {
-            width: 70%;
-            text-align: right;
-            padding: 0;
-            margin: 0;
-            font-family: 'Josefin Sans', sans-serif;
+        100% {
+            opacity: 1;
         }
-        
-        .menu {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 10px;
-        }
-        
-        .menushrink {
-            margin-top: 270px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0;
-            text-align: center;
-            margin-left: -30px;
-        }
-        
-        nav a {
-            font-size: 1.1em;
-            transition: .5s ease;
-            color: grey;
-        }
-        
-        nav ul li {
-            list-style-type: none;
-            margin-right: 20px;
-        }
-        
-        nav li a:hover {
-            color: black;
-        }
-        
-        nav li a::after {
-            content: '';
-            margin-top: 10px;
-            margin-bottom: -10px;
-            display: block;
-            width: 0;
-            height: 4px;
-            background: transparent;
-            width: 0%;
-            transition: width 0.3s easeInOutBack;
-            background-color: #fcf428;
-            transition: width 0.8s ease;
-        }
-        
-        nav li a:hover::after {
-            width: 100%;
-            transition: width 0.3s easeInOutBack;
-            background-color: black;
-            transition: width 0.3s ease;
-        }
-        
-        h1 {
-            font-family: 'Abril Fatface', cursive;
-            font-weight: normal;
-            font-size: 2.5em;
-            margin-bottom: 0px;
-            padding-bottom: 0px;
-            animation-name: apparition;
-            animation-duration: 4s;
-        }
-        
-        .trait {
-            border-top: 1px solid grey;
-            width: 40%;
-        }
-        
-        .trait2 {
-            border-top: 1px solid black;
-            width: 10%;
-        }
-        
-        h2 {
-            margin-top: 0px;
-            padding-top: 10px;
-            padding-bottom: 20px;
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 1em;
-            font-weight: normal;
-        }
-        
-        .navlogo {
-            color: grey;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            font-weight: normal;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-        
-        h4 {
-            margin-top: 20px;
-            font-size: 2.4em;
-            font-family: 'Abril Fatface', cursive;
-            font-weight: normal;
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        #boxp {
-            display: flex;
-            justify-content: center;
-            height: 300px;
-            text-align: center;
-            margin-bottom: 5px;
-            margin-left: 20px;
-            padding-top: 30px;
-        }
-        
-        .img {
-            position: absolute;
-            z-index: 1;
-            margin-top: 1px;
-        }
-        
-        .calque {
-            width: 900px;
-            height: 300px;
-            top: 0px;
-            left: 0;
-            z-index: 2;
-            border: 1px dashed black;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        #skills {
-            height: 100vh;
-            background: #fcf428;
-            margin-top: 40px;
-        }
-        
-        .container_comp {
-            margin-left: 200px;
-            padding-top: 50px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            width: 80%;
-        }
-        
-        .competences {
-            height: 200px;
-            width: 200px;
-            background: white;
-            margin: 10px;
-            border-radius: 100px;
-            margin-bottom: 50px;
-        }
-        
-        .descr_comp {
-            margin-top: 220px;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-        
-        @keyframes logo {
-            0% {
-                margin-left: 0px;
-            }
-            50% {
-                margin-left: 10px;
-            }
-            100% {
-                margin-left: 0px;
-            }
-        }
-        /*   @keyframes apparition {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+    }
