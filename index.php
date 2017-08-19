@@ -18,7 +18,7 @@
     <body>
         <header>
             <div id="logo">
-                <h1 class="nomlogo"><img src="logo3.png" style="width: 50px; margin-left: 50px;margin-top: 0px;"></h1>
+                <h1 class="nomlogo"><img src="logo3.png"></h1>
                 <h2 class="navlogo">Développeuse<br> web<br> junior</h2>
             </div>
             <nav>
@@ -88,7 +88,9 @@
                     <h3>' . $language . '</h3>
                       <div class="trait2"></div>
                     <h4>' . $file . '</h4>
+                    
                     <div class="description">' . $description . '</div>
+                    
                     </div>
                 </div>
               </a>';
@@ -138,10 +140,9 @@
                     <div id="text_parcours">
                         <h1>Qui suis-je ?</h1>
                         <p>
-                            Journaliste, principalement sur Internet, pendant 7 ans, je me suis tournée en 2013 vers le développement front-end. Passionnée par le web et les arts graphiques, c’est tout naturellement que j’ai pris ce virage afin d’en faire mon métier.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis, metus sit amet aliquam euismod, erat sem rhoncus nisl, eget mollis urna magna non lacus. Suspendisse sit amet ultricies erat. Nullam bibendum ultrices suscipit. Proin ante erat, varius quis arcu a, porta consequat eros. Vestibulum id pulvinar sem, quis congue neque. Curabitur vel condimentum nisl. Donec ac nisi luctus, volutpat mauris vitae, interdum ante. Donec tincidunt malesuada orci nec dignissim. Nullam ac metus eget metus sagittis lobortis. Aenean a dolor gravida, laoreet nisl in, lobortis purus. Nullam facilisis justo felis, ac aliquam augue congue non. Aenean eget tempus dolor, in varius lectus. Suspendisse in magna in tortor sollicitudin congue. Nulla facilisi. Nam in augue non magna imperdiet imperdiet. Curabitur placerat molestie dui.
 
-                            A 28 ans, reprendre des études à temps complet était pour moi difficilement envisageable. C’est donc en autodidacte que je me suis formée au développement front-end et à l’intégration. Durant un an, livres, cours en vidéo, tutoriels et sites spécialisés ont été mes outils et j'ai pu valider cette autoformation en décrochant mon premier poste début 2014.
-                            Depuis, je cherche toujours à perfectionner mes compétences, dans un métier où l'on n’a jamais fini d’apprendre.
+Proin interdum, velit in sollicitudin venenatis, ligula metus efficitur lectus, non hendrerit lorem lacus a nunc. Suspendisse id tristique erat, vitae ullamcorper massa. Maecenas mollis sollicitudin lectus, vitae laoreet lorem tristique et. Nam malesuada in turpis at lobortis. Vestibulum a leo felis. Nam rhoncus a nulla imperdiet faucibus. Phasellus ex neque, tincidunt sed dolor ac, varius egestas tellus. Vestibulum convallis id justo sed scelerisque. Pellentesque pellentesque lacus eu magna venenatis blandit. Nam aliquet arcu libero, non rutrum neque fermentum elementum. Sed malesuada tellus a accumsan efficitur. Morbi commodo dolor sed feugiat rhoncus. Proin ligula nulla, ullamcorper non sem quis, cursus egestas felis. Phasellus dui lorem, iaculis a posuere sed, convallis ut dui. Quisque vitae augue eros. Morbi quis nunc mi.
                         </p>
                     </div>
                 </div>
@@ -152,8 +153,13 @@
                     <h3>Contact</h3>
                     <p> 06 74 77 34 91<br>
                         audreyguilloud@yahoo.fr</p> 
+                        <a href="https://fr.linkedin.com/in/audrey-guilloud-09777a46"><i class="contactfa fa fa-linkedin-square fa-2x" aria-hidden="true" style="margin-right: 10px"></i></a>
+                        <a href="https://github.com/guilloudaudrey"><i class="contactfa fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </div>
             </div>
+            <footer>
+                <p>© Audrey Guilloud - 2017</p>
+            </footer>
 
 
 
