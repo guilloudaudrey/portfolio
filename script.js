@@ -37,7 +37,7 @@ $(function() {
 });
 
 $(function() {
-    let shrinkHeader = 604;
+    let shrinkHeader = 583;
     let shrinkHeader2 = 2000;
     $(window).scroll(function() {
         let scroll = getCurrentScroll();

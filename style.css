@@ -450,6 +450,34 @@ footer p {
 
 /******** media queries****************/
 
+@media screen and (max-width: 1200px) {
+    .card {
+        left: -200px;
+    }
+    .calque {
+        width: 700px;
+    }
+    .img {
+        width: 700px;
+        overflow: hidden;
+    }
+    .competences {
+        height: 180px;
+        width: 180px;
+        margin-bottom: 40px;
+    }
+    .descr_comp {
+        margin-top: 60px;
+    }
+    .competences>img {
+        margin-top: 55px;
+    }
+    .fa {
+        margin-top: 55px;
+        z-index: 900;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     #logo>.nomlogo>img {
         width: 40px;
@@ -460,10 +488,23 @@ footer p {
     header {
         height: 90px;
     }
-    .about {}
+    .nomlogo1 {
+        width: 130px;
+    }
+    .competences {
+        height: 180px;
+        width: 180px;
+    }
+    .container_comp {
+        width: 80%;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1000px) {
+    #logo>.nomlogo>img {
+        width: 35px;
+    }
     .card {
         left: -200px;
     }
@@ -473,6 +514,34 @@ footer p {
     .img {
         width: 600px;
         overflow: hidden;
+    }
+    header {
+        height: 80px;
+    }
+    .navlogo {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #logo>.nomlogo>img {
+        width: 35px;
+    }
+    .card {
+        left: -200px;
+    }
+    .calque {
+        width: 500px;
+    }
+    .img {
+        width: 500px;
+        overflow: hidden;
+    }
+    header {
+        height: 80px;
+    }
+    .navlogo {
+        height: 25px;
     }
 }
 
