@@ -32,7 +32,6 @@ $(function() {
         let speed = 750; // Durée de l'animation (en ms)
         $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
         return false;
-
     });
 });
 
@@ -41,26 +40,52 @@ $(function() {
     let shrinkHeader2 = 2000;
     $(window).scroll(function() {
         let scroll = getCurrentScroll();
-        if (scroll >= shrinkHeader) {
-            $('header').addClass('nomlogo1');
-            $('.nomlogo').hide();
-            $('.trait').hide();
-            $('.navlogo').hide();
-            $('.menu').addClass('menushrink');
-
-
-
-        } else {
-            $('header').removeClass('nomlogo1');
-            $('.menu').removeClass('menushrink');
-            $('.nomlogo').show();
-            $('.trait').show();
-            $('.navlogo').show();
-            $('nav').show();
+        if (window.innerWidth > 870) {
+            if (scroll >= shrinkHeader) {
+                $('header').addClass('nomlogo1');
+                $('.nomlogo').hide();
+                $('.trait').hide();
+                $('.navlogo').hide();
+                $('.menu').addClass('menushrink');
+            } else {
+                $('header').removeClass('nomlogo1');
+                $('.menu').removeClass('menushrink');
+                $('.nomlogo').show();
+                $('.trait').show();
+                $('.navlogo').show();
+                $('nav').show();
+            }
         }
     });
 
     function getCurrentScroll() {
         return window.pageYOffset;
     }
+});
+
+$(document).ready(function() {
+
+    $(".cross").hide();
+    $(".menu2").hide();
+    $(".hamburger").click(function() {
+        $(".menu2").slideToggle("slow", function() {
+            $(".hamburger").hide();
+            $(".cross").show();
+        });
+    });
+
+    $(".cross").click(function() {
+        $(".menu2").slideToggle("slow", function() {
+            $(".cross").hide();
+            $(".hamburger").show();
+        });
+    });
+
+    $(".ul2").click(function() {
+        $(".menu2").slideToggle("slow", function() {
+            $(".cross").hide();
+            $(".hamburger").show();
+        });
+    });
+
 });
