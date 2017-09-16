@@ -1,9 +1,9 @@
 let boxprojet = document.querySelectorAll(".calque");
-let h3 = document.querySelectorAll("h3");
-let h4 = document.querySelectorAll("h4");
-let trait2 = document.querySelectorAll(".trait2");
+let h3 = document.querySelectorAll(".h3calque");
+let h4 = document.querySelectorAll(".h4calque");
+let trait2 = document.querySelectorAll(".trait2calque");
 let header = document.querySelector("header");
-let description = document.querySelectorAll(".description");
+let description = document.querySelectorAll(".descriptioncalque");
 
 console.log(boxprojet);
 

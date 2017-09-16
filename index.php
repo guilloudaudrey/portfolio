@@ -95,10 +95,10 @@
                     <div id="boxp">               
                         <div class="img" style="background-image: url('<?php echo $screen ?>')">
                             <div class="calque">
-                                <h3><?php echo $language ?></h3>
-                                <div class="trait2"></div>
-                                <h4><?php echo $file ?></h4>                
-                                <div class="description"><?php echo $description ?></div>
+                                <h3 class="h3calque"><?php echo $language ?></h3>
+                                <div class="trait2calque"></div>
+                                <h4 class="h4calque"><?php echo $file ?></h4>                
+                                <div class="descriptioncalque"><?php echo $description ?></div>
                             </div>
                         </div> 
                     </div> 
